@@ -5,7 +5,7 @@
     error_reporting(0);
     session_start();
     if (!$_SESSION["id"]) {
-        echo "請登入帳號";
+        echo "請先登入";
         echo "<meta http-equiv=REFRESH content='3, url=2.login.html'>";
     }
     else{
@@ -13,7 +13,7 @@
         $result=mysqli_query($conn, "select * from user");
         #印出使用者表格的欄
         echo "<h1>使用者管理</h1>
-              [<a href=14.user_add_form.php>新增使用者</a>] [<a href=11.bulletin.php>回佈告欄列表</a>]<br>
+              [<a href=14.user_add_form.php>新增使用者</a>] [<a href=11.bulletin.php>回佈告欄首頁</a>]<br>
               <table border=1><tr> <td><br></td> <td>id</td> <td>pwd</td> </tr>";
         while ($row=mysqli_fetch_array($result)){
             #加上修改/刪除程式連結
