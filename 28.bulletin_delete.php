@@ -11,7 +11,7 @@
         if (!mysqli_query($conn,$sql)){
             echo "佈告刪除錯誤";
         }else{
-            echo "刪除成功!";
+            echo "刪除成功!<br>三秒鐘後回到佈告欄首頁";
         }
         echo "<meta http-equiv=REFRESH content='3, url=11.bulletin.php'>";
     }
