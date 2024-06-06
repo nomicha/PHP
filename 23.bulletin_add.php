@@ -14,7 +14,7 @@
             echo "新增資料錯誤";
         }
         else{
-            echo "新增佈告成功，三秒鐘後回到網頁";
+            echo "新增佈告成功，三秒鐘後回到佈告欄首頁";
             echo "<meta http-equiv=REFRESH content='3, url=11.bulletin.php'>";
         }
     }
