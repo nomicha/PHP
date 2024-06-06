@@ -6,8 +6,8 @@
     $result=mysqli_query($conn, "select * from user");
     $login=FALSE;
     #mysqli_fetch_array() 從查詢出來的資料一筆一筆抓出來
-    while ($row=mysqli_fetch_array($result))
-    {   if (($_POST["id"]==$row["id"]) && ($_POST["pwd"]==$row["pwd"])){
+    while ($row=mysqli_fetch_array($result)){
+        if (($_POST["id"]==$row["id"]) && ($_POST["pwd"]==$row["pwd"])){
             $login=TRUE;
         }
     }
