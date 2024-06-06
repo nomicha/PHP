@@ -3,7 +3,7 @@
 error_reporting(0);
 session_start();
 if (!$_SESSION["id"]) {
-  echo "請登入帳號";
+  echo "請先登入";
   echo "<meta http-equiv=REFRESH content='3, url=2.login.html'>";
 }
 else{    
