@@ -17,7 +17,7 @@
         else{
             echo "刪除成功!";
         }
-        
+        echo "刪除使用者成功，三秒鐘後回到使用者管理頁面";
         echo "<meta http-equiv=REFRESH content='3, url=18.user.php'>";
 }
 
